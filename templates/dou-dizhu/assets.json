@@ -1,0 +1,81 @@
+{
+  "templateId": "dou-dizhu",
+  "description": "斗地主可替换素材槽位定义。remix.py 会把用户提供的自定义图片(URL 或本地文件)映射到这些槽位，并写进发给秒哒的生成指令中。未提供的槽位使用模板默认素材。",
+  "slots": [
+    {
+      "key": "card_back",
+      "label": "牌背面",
+      "type": "image",
+      "required": false,
+      "recommendedSize": "180x252",
+      "hint": "所有扑克牌翻面时显示的背面图案"
+    },
+    {
+      "key": "joker_big",
+      "label": "大王",
+      "type": "image",
+      "required": false,
+      "recommendedSize": "180x252",
+      "hint": "大王(Red Joker)牌面，常用于替换成家人/主角形象"
+    },
+    {
+      "key": "joker_small",
+      "label": "小王",
+      "type": "image",
+      "required": false,
+      "recommendedSize": "180x252",
+      "hint": "小王(Black Joker)牌面"
+    },
+    {
+      "key": "table_background",
+      "label": "牌桌背景",
+      "type": "image",
+      "required": false,
+      "recommendedSize": "1280x720",
+      "hint": "游戏主界面/牌桌背景图"
+    },
+    {
+      "key": "avatar_player",
+      "label": "玩家头像(自己)",
+      "type": "image",
+      "required": false,
+      "recommendedSize": "128x128",
+      "hint": "底部真人玩家头像"
+    },
+    {
+      "key": "avatar_left",
+      "label": "左侧AI头像",
+      "type": "image",
+      "required": false,
+      "recommendedSize": "128x128",
+      "hint": "左侧电脑对手头像"
+    },
+    {
+      "key": "avatar_right",
+      "label": "右侧AI头像",
+      "type": "image",
+      "required": false,
+      "recommendedSize": "128x128",
+      "hint": "右侧电脑对手头像"
+    },
+    {
+      "key": "landlord_badge",
+      "label": "地主标识",
+      "type": "image",
+      "required": false,
+      "recommendedSize": "96x96",
+      "hint": "标记谁是地主的角标/帽子图标"
+    },
+    {
+      "key": "card_faces",
+      "label": "54张牌面(整套)",
+      "type": "image_set",
+      "required": false,
+      "hint": "整套牌面替换。可传一个映射对象 {\"3_spade\":\"url\", \"K_heart\":\"url\", ...}，或说明用统一风格。key 格式: 点数_花色(spade/heart/club/diamond)，大小王用 joker_big/joker_small"
+    }
+  ],
+  "notes": [
+    "如果用户只想替换少数几张牌(如把大小王换成家人照片)，只填对应槽位即可，其余保持模板默认。",
+    "所有图片建议是公开可访问的 https URL。若为本地文件，需先由外层 Harness 或图床转换为 URL(v1 暂不内置图床)。"
+  ]
+}

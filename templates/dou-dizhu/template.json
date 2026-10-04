@@ -1,0 +1,14 @@
+{
+  "id": "dou-dizhu",
+  "name": "斗地主",
+  "nameEn": "Dou Dizhu (Fight the Landlord)",
+  "category": "card-game",
+  "description": "经典三人斗地主纸牌游戏，支持人机对战、叫地主、出牌规则校验、倍数结算。作为半-DIY模板，玩家可将54张牌面、大小王、背景、玩家头像替换为自定义图片（家人/朋友/动漫形象）。",
+  "hotness": "爆款",
+  "specFile": "spec.md",
+  "assetsFile": "assets.json",
+  "referenceDir": "reference",
+  "defaultQueryMode": "deep_mode",
+  "recommendedFlow": ["chat", "generate-app", "publish"],
+  "tags": ["纸牌", "棋牌", "多人", "回合制", "爆款小游戏"]
+}
